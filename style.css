@@ -1,61 +1,3 @@
-/* nav {
-    border: 2px solid green;
-}
-
-.nav-left {
-    border: 2px solid green;
-}
-
-.nav-right {
-    border: 2px solid green;
-}
-
-ul {
-    border: 2px solid green;
-}
-
-li {
-    border: 2px solid green;
-}
-
-header {
-    border: 2px solid orange;
-}
-
-#duck {
-    border: 2px solid yellow;
-}
-
-.text {
-    border: 2px solid yellow;
-}
-
-.text p {
-    border: 2px solid yellow;
-}
-
-.duck {
-    border: 2px solid yellow;
-}
-
-#emergency {
-    border: 2px solid blue;
-}
-
-.grid-container {
-    border: 2px solid blue;
-
-}
-
-.grid-item {
-    border: 2px solid pink;
-
-}
-
-footer {
-    border: 2px solid red;
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -65,9 +7,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-family: "Coming Soon", cursive;
   text-align: center;
   margin: 2rem;
@@ -76,6 +16,7 @@ h3 {
 p {
   margin: 2rem;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -83,7 +24,7 @@ nav {
   padding: 10px;
 }
 
-.nav-left {
+.nav-left, .nav-right {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,9 +54,6 @@ nav {
 .nav-right__item a {
   color: black;
   text-decoration: none;
-}
-
-.nav-right__item a {
   transition-property: box-shadow color;
   transition-duration: 0.7s;
   transition-delay: 0s;
@@ -123,10 +61,6 @@ nav {
 
 .nav-right__item a:hover {
   box-shadow: 0px 5px rgb(240, 121, 36);
-  color: 0px 5px rgb(240, 121, 36);
-}
-
-.nav-right__item a:hover {
   color: orange;
 }
 
@@ -146,12 +80,15 @@ nav {
   box-shadow: 5px 5px rgb(240, 121, 36);
   padding: 0.5rem;
 }
+
 #duck img {
   margin-right: 2rem;
 }
+
 #emergency h2 {
   text-align: center;
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -166,6 +103,9 @@ nav {
   justify-content: center;
   align-items: center;
   background-color: seashell;
+  transition-property: box-shadow;
+  transition-duration: 0.7s;
+  transition-delay: 0s;
 }
 
 .grid-item:active {
@@ -173,17 +113,6 @@ nav {
   background-color: rgb(240, 121, 36);
 }
 
-.grid-item {
-  /*here we define what properties the transition should apply (background-colo, color
-    and font-size*/
-  transition-property: box-shadow;
-  /* here we define how long our transition should last*/
-  transition-duration: 0.7s;
-  /* here we say that our transition should start0,5 seconds after the trigger*/
-  transition-delay: 0s;
-}
-
-/* here we define how our transition properties will change on hover*/
 .grid-item:hover {
   box-shadow: 5px 5px rgb(240, 121, 36);
 }
@@ -192,49 +121,46 @@ nav {
   color: black;
   text-decoration: none;
 }
+
 #contact {
   background-color: seashell;
   padding: 2rem 0;
 }
 
-#contact h2 {
-}
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 footer {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-form input,
-form textarea {
+form input, form textarea {
   width: 40%;
   padding: 0.5rem;
   margin: 0.5rem;
   border: 1px solid rgb(240, 121, 36);
-
   font-family: "Roboto", sans-serif;
 }
 
 form button {
-    background-color: rgb(240, 121, 36);
-    padding: .5rem 2rem;
-    margin: 1rem auto;
-    font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
-    border: none;
-    transition-property: box-shadow color;
-    transition-duration: 0.7s;
-    transition-delay: 0s;
+  background-color: rgb(240, 121, 36);
+  padding: .5rem 2rem;
+  margin: 1rem auto;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  transition-property: box-shadow color;
+  transition-duration: 0.7s;
+  transition-delay: 0s;
 }
 
 form button:hover {
-    cursor: pointer;
-    box-shadow: 5px 5px black;
-    color: white;
+  cursor: pointer;
+  box-shadow: 5px 5px black;
+  color: white;
 }
- 
